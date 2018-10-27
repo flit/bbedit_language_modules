@@ -7,7 +7,7 @@
 	<key>BBLMColorsSyntax</key>
 	<true/>
 	<key>BBLMCommentLineDefault</key>
-	<string>#</string>
+	<string># </string>
 	<key>BBLMSuffixMap</key>
 	<array>
 		<dict>
@@ -169,7 +169,7 @@
 		<key>Function Pattern</key>
 		<string>^(?P&lt;function&gt;(?P&lt;function_name&gt;[\S]+?):.*$(\r[ \t]+.*)*)</string>
 		<key>Number Pattern</key><!-- appropriating for .PHONY -->
-		<string>^\.PHONY:.*$</string>
+		<string>^\.PHONY:[^\\\r]*(\\\r[^\\\r]*)*</string>
 		<key>String Pattern</key>
 		<string>(?x:
 			(?&gt;	"	(?s: \\. | [^"] )*?		(?: " | $)	)	|
@@ -183,7 +183,7 @@
 			(?P&gt;string)
 		)</string>
 		<key>Identifier and Keyword Character Class</key>
-		<string>[:alnum:]_\.\-</string>
+		<string>[:alnum:]_\.\-\\/:;,</string>
 	</dict>
 	<key>com.barebones.DocumentType</key>
 	<string>CodelessLanguageModule</string>
