@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>BBEditDocumentType</key>
+        <string>CodelessLanguageModule</string>
+        <key>BBLMColorsSyntax</key>
+        <true/>
+        <key>BBLMIsCaseSensitive</key>
+        <false/>
+        <key>BBLMKeywordPatterns</key>
+        <array>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.variable</string>
+                <key>Pattern</key>
+                <string>%[A-Za-z0-9_]+%</string>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.preprocessor</string>
+                <key>Pattern</key>
+                <string>^:.*</string>
+            </dict>
+        </array>
+        <key>BBLMKeywords</key>
+        <array>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.keyword</string>
+                <key>Keywords</key>
+                <array>
+                    <string>assoc</string>
+                    <string>cd</string>
+                    <string>cls</string>
+                    <string>color</string>
+                    <string>copy</string>
+                    <string>date</string>
+                    <string>del</string>
+                    <string>dir</string>
+                    <string>echo</string>
+                    <string>endlocal</string>
+                    <string>erase</string>
+                    <string>ftype</string>
+                    <string>md</string>
+                    <string>mklink</string>
+                    <string>move</string>
+                    <string>path</string>
+                    <string>popd</string>
+                    <string>prompt</string>
+                    <string>pushd</string>
+                    <string>ren</string>
+                    <string>rd</string>
+                    <string>setlocal</string>
+                    <string>shift</string>
+                    <string>start</string>
+                    <string>time</string>
+                    <string>title</string>
+                    <string>ver</string>
+                    <string>verify</string>
+                    <string>vol</string>
+                </array>
+            </dict>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.predefined-symbol</string>
+                <key>Keywords</key>
+                <array>
+                    <string>if</string>
+                    <string>for</string>
+                    <string>else</string>
+                    <string>do</string>
+                    <string>return</string>
+                    <string>exit</string>
+                    <string>pause</string>
+                    <string>call</string>
+                    <string>goto</string>
+                    <string>set</string>
+                    <string>not</string>
+                    <string>exist</string>
+                    <string>errorlevel</string>
+                    <string>in</string>
+                    <string>neq</string>
+                </array>
+            </dict>
+        </array>
+        <key>BBLMLanguageCode</key>
+        <string>.bat</string>
+        <key>BBLMLanguageDisplayName</key>
+        <string>Batch file</string>
+        <key>BBLMScansFunctions</key>
+        <true/>
+        <key>BBLMSuffixMap</key>
+        <array>
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.bat</string>
+            </dict>
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.cmd</string>
+            </dict>
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.btm</string>
+            </dict>
+        </array>
+        <key>BBLMCanSpellCheckCodeRuns</key>
+        <false/>
+        <key>BBLMCommentLineDefault</key>
+        <string>rem </string>
+        <key>Language Features</key>
+        <dict>
+            <key>Identifier and Keyword Character Class</key>
+            <string>a-zA-Z0-9_.</string>
+            <key>Comment Pattern</key>
+            <string>(REM |rem ).*$|::.*$</string>
+            <key>String Pattern</key>
+            <string>(?x:
+              (?&gt;	"	(?s: \\. | [^"] )*?		(?: " | $)	)	|
+              (?&gt;	'	(?s: \\. | [^'] )*?		(?: ' | $)	)	|
+            )</string>
+            <key>Function Pattern</key>
+            <string><![CDATA[(?x:
+              (?P<function_name>^:[a-zA-Z0-9_]+)
+            )]]></string>
+            <key>Skip Pattern</key>
+            <string><![CDATA[
+            (?x:
+                (?P>comment) |
+                (?P>string)
+            )]]></string>
+        </dict>
+        <key>com.barebones.DocumentType</key>
+        <string>CodelessLanguageModule</string>
+    </dict>
+</plist>

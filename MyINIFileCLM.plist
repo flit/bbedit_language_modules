@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>BBEditDocumentType</key>
+        <string>CodelessLanguageModule</string>
+        <key>BBLMColorsSyntax</key>
+        <false/>
+        <key>BBLMIsCaseSensitive</key>
+        <true/>
+        <key>BBLMKeywordList</key>
+        <array>
+        </array>
+        <key>BBLMLanguageCode</key>
+        <string>myIN</string>
+        <key>BBLMLanguageDisplayName</key>
+        <string>My INI File</string>
+        <key>BBLMScansFunctions</key>
+        <true/>
+        <key>BBLMSuffixMap</key>
+        <array>
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.ini</string>
+            </dict>
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.cnf</string>
+            </dict>
+        </array>
+        <key>BBLMCanSpellCheckCodeRuns</key>
+        <false/>
+        <key>Language Features</key>
+        <dict>
+<!--            <key>Identifier and Keyword Character Class</key>
+            <string>a-zA-Z0-9_@+-:=</string> -->
+            <key>Comment Pattern</key>
+            <string>#.*$</string>
+            <key>String Pattern</key>
+            <string>\[[^\[\]]+\]</string>
+            <key>Function Pattern</key>
+            <string>^\W*\[\W*(?P&lt;function_name&gt;.*)\W*\]</string>
+        </dict>
+    </dict>
+</plist>

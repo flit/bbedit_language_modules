@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>BBEditDocumentType</key>
+        <string>CodelessLanguageModule</string>
+        <key>BBLMColorsSyntax</key>
+        <true/>
+        <key>BBLMIsCaseSensitive</key>
+        <true/>
+        <key>BBLMKeywordPatterns</key>
+        <array>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.variable</string>
+                <key>Pattern</key>
+                <string>@[a-zA-Z0-9_]+</string>
+            </dict>
+        </array>
+        <key>BBLMKeywords</key>
+        <array>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.preprocessor</string>
+                <key>Keywords</key>
+                <array>
+                    <string>#define</string>
+                    <string>#if</string>
+                    <string>#ifdef</string>
+                    <string>#else</string>
+                    <string>#elif-</string>
+                    <string>#endif</string>
+                    <string>#include</string>
+                </array>
+            </dict>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.keyword</string>
+                <key>Keywords</key>
+                <array>
+                    <string>program</string>
+                    <string>const</string>
+                    <string>import</string>
+                    <string>enum</string>
+                    <string>struct</string>
+                    <string>union</string>
+                    <string>case</string>
+                    <string>default</string>
+                    <string>byref</string>
+                    <string>byval</string>
+                    <string>type</string>
+                    <string>interface</string>
+                    <string>command</string>
+                    <string>event</string>
+                    <string>version</string>
+                    <string>in</string>
+                    <string>out</string>
+                    <string>inout</string>
+                    <string>async</string>
+                    <string>oneway</string>
+                    <string>list</string>
+                    <string>ref</string>
+                    <string>true</string>
+                    <string>false</string>
+                </array>
+            </dict>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.predefined-symbol</string>
+                <key>Keywords</key>
+                <array>
+                    <string>bool</string>
+                    <string>int8</string>
+                    <string>int16</string>
+                    <string>int32</string>
+                    <string>int64</string>
+                    <string>uint8</string>
+                    <string>uint16</string>
+                    <string>uint32</string>
+                    <string>uint64</string>
+                    <string>float</string>
+                    <string>double</string>
+                    <string>void</string>
+                    <string>string</string>
+                    <string>binary</string>
+                </array>
+            </dict>
+        </array>
+        <key>BBLMLanguageCode</key>
+        <string>eRPC</string>
+        <key>BBLMLanguageDisplayName</key>
+        <string>eRPC IDL</string>
+        <key>BBLMScansFunctions</key>
+        <true/>
+        <key>BBLMSuffixMap</key>
+        <array>
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.erpc</string>
+            </dict>
+        </array>
+        <key>BBLMCanSpellCheckCodeRuns</key>
+        <false/>
+        <key>BBLMCommentLineDefault</key>
+        <string>//</string>
+        <key>Language Features</key>
+        <dict>
+            <key>Identifier and Keyword Character Class</key>
+            <string>a-zA-Z0-9_.</string>
+            <key>Comment Pattern</key>
+            <string>((//|#).*$)|/\*(\r|.)*?\*/</string>
+            <key>String Pattern</key>
+            <string><![CDATA[(?x:
+              ("(\\"|[^"\r]|\\\r)*")  (?# Double-quote)
+            )]]></string>
+            <key>Function Pattern</key>
+            <string><![CDATA[(?x:
+              (interface|type|struct|enum)\s+
+              (?P<function_name>[a-zA-Z0-9_]+)
+            )]]></string>
+            <key>Skip Pattern</key>
+            <string><![CDATA[
+            (?x:
+                (?P>comment) |
+                (?P>string)
+            )]]></string>
+        </dict>
+        <key>com.barebones.DocumentType</key>
+        <string>CodelessLanguageModule</string>
+    </dict>
+</plist>

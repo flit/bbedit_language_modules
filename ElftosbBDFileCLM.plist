@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>BBEditDocumentType</key>
+        <string>CodelessLanguageModule</string>
+        <key>BBLMColorsSyntax</key>
+        <true/>
+        <key>BBLMIsCaseSensitive</key>
+        <true/>
+        <key>BBLMKeywordList</key>
+        <array>
+            <string>options</string>
+            <string>sources</string>
+            <string>constants</string>
+            <string>section</string>
+            <string>if</string>
+            <string>else</string>
+            <string>exists</string>
+            <string>defined</string>
+            <string>load</string>
+            <string>call</string>
+            <string>jump</string>
+            <string>from</string>
+            <string>extern</string>
+            <string>mode</string>
+            <string>info</string>
+            <string>warning</string>
+            <string>error</string>
+            <string>sizeof</string>
+            <string>dcd</string>
+            <string>hab</string>
+            <string>ivt</string>
+            <string>true</string>
+            <string>false</string>
+            <string>yes</string>
+            <string>no</string>
+            <string>#define</string>
+            <string>#if</string>
+            <string>#ifdef</string>
+            <string>#else</string>
+            <string>#elif-</string>
+            <string>#endif</string>
+            <string>#include</string>
+        </array>
+        <key>BBLMLanguageCode</key>
+        <string>.bd_</string>
+        <key>BBLMLanguageDisplayName</key>
+        <string>Elftosb Boot Descriptor</string>
+        <key>BBLMScansFunctions</key>
+        <true/>
+        <key>BBLMSuffixMap</key>
+        <array>
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.bd</string>
+            </dict>
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.tbd</string>
+            </dict>
+        </array>
+        <key>BBLMCanSpellCheckCodeRuns</key>
+        <false/>
+        <key>Language Features</key>
+        <dict>
+            <key>Identifier and Keyword Character Class</key>
+            <string>a-zA-Z0-9_.()</string>
+            <key>Comment Pattern</key>
+            <string>((//|#).*$)|/\*(\r|.)*?\*/</string>
+            <key>String Pattern</key>
+            <string>(~?\$[.a-zA-Z_0-9\[\]\*\-]+)|(\"([^"]|\\\")*\")|(\'([^']|\\\')*\')</string>
+            <key>Function Pattern</key>
+            <string>(?P&lt;function_name&gt;((section\W\((0x)?[0-9a-fA-F]+)|(constants)|(sources)|(options)))</string>
+        </dict>
+    </dict>
+</plist>

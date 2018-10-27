@@ -1,0 +1,39 @@
+Matlab Language Module
+Version 2.3
+2008-08-01
+Andrew J. Miller
+ajmiller@psu.edu
+
+To install, quit BBEdit and place the module Matlab.bblm in
+/Library/Application Support/BBEdit/Language Modules/
+or
+~/Library/Application Support/BBEdit/Language Modules/
+depending on where your BBEdit Application Support folder is located. Remove any previous versions of the Matlab plug-in and restart BBEdit. The same instructions apply equally to TextWrangler, but install in the TextWrangler/Language Modules/ folder in Applicaton Support. 
+
+You may have to remove the .m suffix mapping for Objective-C to get the module to work properly.
+
+This version was built with Xcode as a bundle containing a universal binary, and requires BBEdit 8.0 or higher or TextWrangler 2.0 or higher.
+
+New in version 2.3:
+Added support for new keywords 'parfor', 'classdef', 'events', 'properties', 'methods'. 
+
+New in version 2.2:
+Support for block comments. In recent versions of MATLAB, a block comment is started with '%{' and ended with '%}'. The delimiters must be placed on blank lines, or else they behave as ordinary line comments. Block comments may be nested.
+
+New in version 2.1:
+Built as a universal binary. No other changes.
+
+New in version 2.0:
+Continuation characters '...' are colored the same as keywords, and all text following '...' is colored the same as comments to the end of the line.
+
+System commands that follow an '!' are now colored. This color may be set using the 'Processing Instructions' button in the 'Text Colors' preference panel in BBEdit.
+
+The color of uncompleted character strings can be set using the 'Image' button in the 'Text Colors' preference panel.
+
+Also, keywords that are used as members of structures are now not colored as keywords.Ê For example a structure might have a member called 'function'. It would be normal for references to this member such as my_struct.function to not have any coloration on the word 'function'. Also, when 'end' is used as an index to an array such as my_array(1:end) it will now not be colored. In fact, keywords will only be colored if they appear in their proper context as matlab flow control statements.
+
+The function popup menu will now position the cursor at the start of any comments that precede the start of the function definition.
+
+Newer versions of matlab allow functions to be nested if they are terminated by 'end' statements. The function popup menu indents nested function names accordingly.
+
+
