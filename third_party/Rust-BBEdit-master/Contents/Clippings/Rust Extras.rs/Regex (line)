@@ -1,3 +1,0 @@
-#INDENT#static ref #PLACEHOLDERSTART#...#PLACEHOLDEREND#: Regex = Regex::new(r##"(?x) ^
-    #PLACEHOLDERSTART#...#PLACEHOLDEREND#
-$ "##).unwrap();
