@@ -26,7 +26,7 @@
         <array>
             <dict>
                 <key>RunKind</key>
-                <string>com.barebones.bblm.keyword</string>
+                <string>com.barebones.bblm.predefined-symbol</string>
                 <key>Keywords</key>
                 <array>
                     <string>assoc</string>
@@ -62,7 +62,7 @@
             </dict>
             <dict>
                 <key>RunKind</key>
-                <string>com.barebones.bblm.predefined-symbol</string>
+                <string>com.barebones.bblm.keyword</string>
                 <key>Keywords</key>
                 <array>
                     <string>if</string>
@@ -113,7 +113,7 @@
             <key>Identifier and Keyword Character Class</key>
             <string>a-zA-Z0-9_.</string>
             <key>Comment Pattern</key>
-            <string>(REM |rem ).*$|::.*$</string>
+            <string>@?(REM |rem ).*$|::.*$</string>
             <key>String Pattern</key>
             <string>(?x:
               (?&gt;	"	(?s: \\. | [^"] )*?		(?: " | $)	)	|
