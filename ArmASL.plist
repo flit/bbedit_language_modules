@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>BBEditDocumentType</key>
+        <string>CodelessLanguageModule</string>
+        <key>BBLMColorsSyntax</key>
+        <true/>
+        <key>BBLMIsCaseSensitive</key>
+        <true/>
+<!--
+        <key>BBLMKeywordPatterns</key>
+        <array>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.variable</string>
+                <key>Pattern</key>
+                <string>@[a-zA-Z0-9_]+</string>
+            </dict>
+        </array>
+ -->
+        <key>BBLMKeywords</key>
+        <array>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.preprocessor</string>
+                <key>Keywords</key>
+                <array>
+                    <string>#define</string>
+                    <string>#if</string>
+                    <string>#ifdef</string>
+                    <string>#ifndef</string>
+                    <string>#else</string>
+                    <string>#elif-</string>
+                    <string>#endif</string>
+                    <string>#include</string>
+                </array>
+            </dict>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.keyword</string>
+                <key>Keywords</key>
+                <array>
+                  <string>AND</string>
+                  <string>CONSTRAINED_UNPREDICTABLE</string>
+                  <string>Consistent</string>
+                  <string>DIV</string>
+                  <string>EOR</string>
+                  <string>IFF</string>
+                  <string>IMPLEMENTATION_DEFINED</string>
+                  <string>IMPLIES</string>
+                  <string>IN</string>
+                  <string>MOD</string>
+                  <string>NOT</string>
+                  <string>OR</string>
+                  <string>QUOT</string>
+                  <string>REM</string>
+                  <string>SEE</string>
+                  <string>UNDEFINED</string>
+                  <string>UNKNOWN</string>
+                  <string>UNPREDICTABLE</string>
+                  <string>__TYPE</string>
+                  <string>__config</string>
+                  <string>__event</string>
+                  <string>__forall</string>
+                  <string>__intersect</string>
+                  <string>__map</string>
+                  <string>__namespace</string>
+                  <string>__newevent</string>
+                  <string>__newmap</string>
+                  <string>__overloaded</string>
+                  <string>__register</string>
+                  <string>__type</string>
+                  <string>array</string>
+                  <string>assert</string>
+                  <string>bit</string>
+                  <string>case</string>
+                  <string>catch</string>
+                  <string>constant</string>
+                  <string>do</string>
+                  <string>downto</string>
+                  <string>else</string>
+                  <string>elsif</string>
+                  <string>enumeration</string>
+                  <string>for</string>
+                  <string>if</string>
+                  <string>is</string>
+                  <string>is</string>
+                  <string>of</string>
+                  <string>otherwise</string>
+                  <string>repeat</string>
+                  <string>return</string>
+                  <string>then</string>
+                  <string>throw</string>
+                  <string>to</string>
+                  <string>try</string>
+                  <string>type</string>
+                  <string>typeof</string>
+                  <string>until</string>
+                  <string>when</string>
+                  <string>while</string>
+                </array>
+            </dict>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.predefined-symbol</string>
+                <key>Keywords</key>
+                <array>
+                    <string>TRUE</string>
+                    <string>FALSE</string>
+                    <string>bits</string>
+                    <string>LOW</string>
+                    <string>HIGH</string>
+                    <string>Int</string>
+                    <string>UInt</string>
+                    <string>boolean</string>
+                    <string>signal</string>
+                    <string>integer</string>
+                    <string>string</string>
+                    <string>real</string>
+                </array>
+            </dict>
+        </array>
+        <key>BBLMLanguageCode</key>
+        <string>asl_</string>
+        <key>BBLMLanguageDisplayName</key>
+        <string>Arm ASL</string>
+        <key>BBLMScansFunctions</key>
+        <false/>
+        <key>BBLMSuffixMap</key>
+        <array>
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.asl</string>
+            </dict>
+        </array>
+        <key>BBLMCanSpellCheckCodeRuns</key>
+        <false/>
+        <key>BBLMCommentLineDefault</key>
+        <string>//</string>
+        <key>Language Features</key>
+        <dict>
+            <key>Identifier and Keyword Character Class</key>
+            <string>a-zA-Z0-9_.</string>
+            <key>Comment Pattern</key>
+            <string>(//.*$)|/\*(\r|.)*?\*/</string>
+            <key>String Pattern</key>
+            <string><![CDATA[(?x:
+              ("(\\"|[^"\r]|\\\r)*")    (?# Double-quote)
+              | ('(\\'|[^'\r]|\\\r)*')  (?# Single-quote)
+            )]]></string>
+<!--
+            <key>Function Pattern</key>
+            <string><![CDATA[(?x:
+              (?P<function_name>[a-zA-Z0-9_]+)
+            )]]></string>
+ -->
+            <key>Skip Pattern</key>
+            <string><![CDATA[
+            (?x:
+                (?P>comment) |
+                (?P>string)
+            )]]></string>
+        </dict>
+        <key>com.barebones.DocumentType</key>
+        <string>CodelessLanguageModule</string>
+    </dict>
+</plist>
