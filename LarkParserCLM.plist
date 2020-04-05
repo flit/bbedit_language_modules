@@ -9,30 +9,40 @@
         <true/>
         <key>BBLMIsCaseSensitive</key>
         <true/>
-<!--
-			<string>com.barebones.bblm.preprocessor</string>
-			<string>com.barebones.bblm.variable</string>
-			<string>com.barebones.bblm.keyword</string>
-			<string>com.barebones.bblm.predefined-symbol</string>
-			<string>com.barebones.bblm.file-include</string>
- -->
         <key>BBLMKeywordPatterns</key>
         <array>
             <dict>
+                <!-- Rule -->
                 <key>RunKind</key>
-                <string>com.barebones.bblm.variable</string>
+                <string>com.barebones.bblm.indexed-symbol</string>
                 <key>Pattern</key>
-                <string>([a-z0-9_]+)</string>
+                <string>([a-z0-9_]+)(\.[0-9]+)?</string>
             </dict>
             <dict>
+                <!-- Terminal -->
                 <key>RunKind</key>
                 <string>com.barebones.bblm.keyword</string>
                 <key>Pattern</key>
-                <string>([A-Z0-9_]+)</string>
+                <string>([A-Z0-9_]+)(\.[0-9]+)?</string>
+            </dict>
+            <dict>
+                <!-- Operators -->
+                <key>RunKind</key>
+                <string>com.barebones.bblm.variable</string>
+                <key>Pattern</key>
+                <string>(->|\|^(\?|\!))</string>
+            </dict>
+            <dict>
+                <!-- Directives -->
+                <key>RunKind</key>
+                <string>com.barebones.bblm.preprocessor</string>
+                <key>Pattern</key>
+                <string>(%(import|ignore))</string>
             </dict>
         </array>
         <key>BBLMKeywords</key>
         <array>
+<!--
             <dict>
                 <key>RunKind</key>
                 <string>com.barebones.bblm.preprocessor</string>
@@ -42,6 +52,7 @@
                     <string>%ignore</string>
                 </array>
             </dict>
+ -->
             <dict>
                 <key>RunKind</key>
                 <string>com.barebones.bblm.predefined-symbol</string>
@@ -67,8 +78,6 @@
                     <string>CR</string>
                     <string>LF</string>
                     <string>NEWLINE</string>
-                    <string>|</string>
-                    <string>-></string>
                 </array>
             </dict>
         </array>
@@ -77,7 +86,7 @@
         <key>BBLMLanguageDisplayName</key>
         <string>Lark Grammar</string>
         <key>BBLMScansFunctions</key>
-        <false/>
+        <true/>
         <key>BBLMSuffixMap</key>
         <array>
             <dict>
@@ -87,10 +96,8 @@
         </array>
         <key>BBLMCanSpellCheckCodeRuns</key>
         <false/>
-        <key>BBLMCommentPrefixDefault</key>
+        <key>BBLMCommentLineDefault</key>
         <string>// </string>
-        <key>BBLMCommentSuffixDefault</key>
-        <string></string>
         <key>Language Features</key>
         <dict>
             <key>Identifier and Keyword Character Class</key>
