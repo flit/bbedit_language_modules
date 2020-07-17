@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
 "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<!--
+  Copyright (c) 2016-2020 Chris Reed.
+
+  Released under a Creative Commons Attribution-ShareAlike License:
+  <http://creativecommons.org/licenses/by-sa/4.0/>
+-->
     <dict>
         <key>BBEditDocumentType</key>
         <string>CodelessLanguageModule</string>

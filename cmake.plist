@@ -16,6 +16,11 @@
 
     Keyword list is made from cmake --help-command-list --help-module-list |grep -v 'cmake version'
 
+    Copyright (c) 2020 Chris Reed.
+    Released under a Creative Commons Attribution-ShareAlike License:
+    <http://creativecommons.org/licenses/by-sa/4.0/>
+-->
+
 -->
     <dict>
         <key>BBEditDocumentType</key>
