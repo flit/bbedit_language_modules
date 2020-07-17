@@ -1,22 +1,38 @@
-"com.barebones.bblm.code" = "Plain text";
-"com.barebones.bblm.preprocessor" = "Preprocessor directives";
-"com.barebones.bblm.comment" = "Comments";
-"com.barebones.bblm.line-comment" = "Line comments";
-"com.barebones.bblm.block-comment" = "Block comments";
-"com.barebones.bblm.string" = "Strings";
-"com.barebones.bblm.single-string" = "Single-quoted strings";
-"com.barebones.bblm.double-string" = "Double-quoted strings";
-"com.barebones.bblm.heredoc-string" = "Here-doc strings";
-"com.barebones.bblm.number" = "Numbers";
-"com.barebones.bblm.file-include" = "File includes";
-"com.barebones.bblm.variable" = "Variables";
-"com.barebones.bblm.keyword" = "Language keywords";
-"com.barebones.bblm.predefined-symbol" = "Predefined symbols";
-"com.barebones.bblm.indexed-symbol" = "ctags symbols";
-"com.barebones.bblm.sgml-cdata" = "SGML unparsed character data (CDATA)";
-"com.barebones.bblm.sgml-decl" = "SGML declarations";
-"com.barebones.bblm.sgml-tag" = "SGML/HTML/XML tags";
-"com.barebones.bblm.sgml-entity" = "SGML/HTML/XML entities";
-"com.barebones.bblm.syntax-error" = "Syntax errors";
-"com.barebones.bblm.xml-pi" = "XML processing instructions";
-"com.barebones.bblm.xml-empty" = "Empty XML tags";
+
+#define	kBBLMCodeRunKind					@"com.barebones.bblm.code"
+#define	kBBLMPreprocessorRunKind			@"com.barebones.bblm.preprocessor"
+#define	kBBLMCommentRunKind					@"com.barebones.bblm.comment"			//	use for languages that don't distinguish between...
+#define	kBBLMLineCommentRunKind				@"com.barebones.bblm.line-comment"		//		...a "rest of line" comment, e.g. "//" in C or "#" in Ruby
+#define	kBBLMBlockCommentRunKind			@"com.barebones.bblm.block-comment"		//		...a begin/end delimited comment, e.g. /*...*/ in C
+#define	kBBLMStringRunKind					@"com.barebones.bblm.string"			//	use for languages that don't distinguish between...
+#define	kBBLMSingleQuotedStringRunKind		@"com.barebones.bblm.single-string"		//		...a single-quoted string, e.g. 'a' in C
+#define	kBBLMDoubleQuotedStringRunKind		@"com.barebones.bblm.double-string"		//		...a double-quoted string, e.g. "hello world" in C
+#define	kBBLMHereDocStringRunKind			@"com.barebones.bblm.heredoc-string"	//		...a "here doc" string as used in many scripting languages
+#define	kBBLMNumberRunKind					@"com.barebones.bblm.number"
+#define	kBBLMFileIncludeRunKind				@"com.barebones.bblm.file-include"
+#define	kBBLMVariableRunKind				@"com.barebones.bblm.variable"
+#define	kBBLMKeywordRunKind					@"com.barebones.bblm.keyword"
+#define kBBLMSyntaxErrorRunKind				@"com.barebones.bblm.syntax-error"
+#define	kBBLMPredefinedSymbolRunKind		@"com.barebones.bblm.predefined-symbol"
+#define	kBBLMIndexedSymbolRunKind			@"com.barebones.bblm.indexed-symbol"				//	ctags catchall
+#define	kBBLMIndexedClassNameRunKind		@"com.barebones.bblm.indexed-symbol.class-name"		//	ctags "c"
+#define	kBBLMIndexedDefineRunKind			@"com.barebones.bblm.indexed-symbol.define"			//	ctags "d"
+#define	kBBLMIndexedEnumerationRunKind		@"com.barebones.bblm.indexed-symbol.enum-member"	//	ctags "e"
+#define	kBBLMIndexedFunctionNameRunKind		@"com.barebones.bblm.indexed-symbol.function-name"	//	ctags "f"
+#define	kBBLMIndexedFileNameRunKind			@"com.barebones.bblm.indexed-symbol.filename"		//	ctags "F"
+#define	kBBLMIndexedEnumNameRunKind			@"com.barebones.bblm.indexed-symbol.enum-name"		//	ctags "g"
+#define	kBBLMIndexedMemberRunKind			@"com.barebones.bblm.indexed-symbol.member"			//	ctags "m"
+#define	kBBLMIndexedPrototypeRunKind		@"com.barebones.bblm.indexed-symbol.fcn-prototype"	//	ctags "p"
+#define	kBBLMIndexedStructureNameRunKind	@"com.barebones.bblm.indexed-symbol.structure-name"	//	ctags "s"
+#define	kBBLMIndexedTypeNameRunKind			@"com.barebones.bblm.indexed-symbol.typedef"		//	ctags "t"
+#define	kBBLMIndexedUnionNameRunKind		@"com.barebones.bblm.indexed-symbol.union"			//	ctags "u"
+#define	kBBLMIndexedVariableNameRunKind		@"com.barebones.bblm.indexed-symbol.variable"		//	ctags "v"
+#define	kBBLMSGMLCDATARunKind				@"com.barebones.bblm.sgml-cdata"		//	SGML unparsed character data (i.e. inside of a <![CDATA...]> block)
+#define	kBBLMSGMLPCDATARunKind				@"com.barebones.bblm.sgml-pcdata"		//	SGML parsed character data (i.e. things not in tags)
+#define	kBBLMSGMLEntityRunKind				@"com.barebones.bblm.sgml-entity"		//	an SGML/HTML/XML entity (named or numeric)
+#define	kBBLMSGMLDeclarationRunKind			@"com.barebones.bblm.sgml-decl"			//	<! ... > (not including comments)
+#define	kBBLMSGMLTagRunKind					@"com.barebones.bblm.sgml-tag"			//	singleton SGML/HTML tags, e.g. <br>
+#define	kBBLMSGMLOpenTagRunKind				@"com.barebones.bblm.sgml-open-tag"		//	openers such as <ul>
+#define	kBBLMSGMLCloseTagRunKind			@"com.barebones.bblm.sgml-close-tag"	//	closers for openers (e.g. </ul>)
+#define kBBLMXMLPIRunKind					@"com.barebones.bblm.xml-pi"			//	processing instructions: <?...>
+#define	kBBLMXMLEmptyTagRunKind				@"com.barebones.bblm.xml-empty"			//	empty XML tags e.g. <hr />
