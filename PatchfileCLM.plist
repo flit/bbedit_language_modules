@@ -9,15 +9,38 @@
         <true/>
         <key>BBLMIsCaseSensitive</key>
         <true/>
+        <key>BBLMKeywordPatterns</key>
+        <array>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.predefined-symbol</string>
+                <key>Pattern</key>
+                <string>^diff .*$</string>
+            </dict>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.heredoc-string</string>
+                <key>Pattern</key>
+                <string>^index [a-f0-9]+\.\.[a-f0-9]+</string>
+            </dict>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.keyword</string>
+                <key>Pattern</key>
+                <string>^@@.*$</string>
+            </dict>
+        </array>
+<!--
         <key>BBLMKeywordList</key>
         <array>
             <string>Index:</string>
             <string>@@</string>
             <string>+++</string>
-            <string>---</string>
+            <string>~~-</string>
             <string>===========================================</string>
             <string>===================================================================</string>
         </array>
+ -->
         <key>BBLMLanguageCode</key>
         <string>Diff</string>
         <key>BBLMLanguageDisplayName</key>
