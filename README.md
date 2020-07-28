@@ -52,58 +52,54 @@ wiki](http://bbeditextras.org/wiki/index.php?title=Codeless_Language_Modules) an
 Module Library](http://www.barebones.com/support/bbedit/plugin_library.html). Some were found just
 by Google or GitHub searches.
 
-- Apache Configuration.plist
-    - https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/a7cbd58b0e64c6b6cd5ec579306ef953b87b83ef/bbedit/Apache%20Configuration.plist
-- AppleScript.plist
-    - https://raw.githubusercontent.com/Angles/AppleScript-CLM-for-TW/master/AppleScript.plist
-- AwkLanguage.plist
-    - http://blog.csdn.net/jznsmail
-- GitBlame.plist
-    - https://raw.githubusercontent.com/ascarter/BBEdit-ApplicationSupport/master/Language%20Modules/GitBlame.plist
-- Go.plist
-    - Go authors.
-- HAML.plist
-    - https://raw.githubusercontent.com/mattmartini/BBEdit-Codeless-Language-Module-for-HAML-SASS/master/HAML.plist
-- LESS.plist
-    - https://raw.githubusercontent.com/mcguffin/bbedit-lesscss-language-module/master/LESS.plist
-- Lasso.plist
-    - https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/default/bbedit/Lasso.plist
-- Make.plist
-    - https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/a7cbd58b0e64c6b6cd5ec579306ef953b87b83ef/bbedit/Make.plist
-- Mathematica.plist
-    - http://www.skidmore.edu/~flip/
-- PostScript.plist
-    - Unknown source.
-- PowerShell.plist
-    - https://raw.githubusercontent.com/doug-baer/BBEdit-PowerShell/master/PowerShell.plist
-- SASS.plist
-    - https://raw.githubusercontent.com/mattmartini/BBEdit-Codeless-Language-Module-for-HAML-SASS/master/SASS.plist
-- Scala.plist
-    - https://raw.githubusercontent.com/dclements/scala_bbedit/master/Language%20Modules/Scala.plist
-- Scala1.plist
-    - https://raw.githubusercontent.com/zenmumbler/ScalaBBLM/master/Scala.plist
-- TypeScript.plist
-    - https://gist.githubusercontent.com/isao/5f6fbe89a438086c36d8/raw/91c66fa3e470ccfb8baa9e71a2779003bbdd778a/TypeScript.plist
-- cmake.plist
-    - http://tadpol.org/projects/bbclm_for_cmake.html
-- coffescript.plist
-    - https://gist.githubusercontent.com/sgss/1739174/raw/0dace6d2a5fc9507fbce15d9ae694bca1780e175/Info.plist
-- csharp.plist
-    - https://raw.githubusercontent.com/zarinfam/textwrangler-csharp-swift-syntax-highlighting/master/csharp.plist
-- dockerfile.plist
-    - https://raw.githubusercontent.com/whoughton/BBEdit-LMs/master/dockerfile.plist
-- groovy.plist
-    - https://raw.githubusercontent.com/rhydlewis/text-editing/master/bbedit/groovy.plist
-- haskell-syntax.plist
-    - Unknown source.
-- java-properties.plist
-    - https://raw.githubusercontent.com/signed8bit/bbedit-clm/master/java-properties/java-properties.plist
-- reStructuredText.plist
-    - https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/default/bbedit/reStructuredText.plist
-- swift.plist
-    - Unknown source.
+- [Ada.plist](https://blady.pagesperso-orange.fr/Ressources/Ada.plist)
+- [Apache Configuration.plist](https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/a7cbd58b0e64c6b6cd5ec579306ef953b87b83ef/bbedit/Apache%20Configuration.plist)
+- [AppleScript.plist](https://raw.githubusercontent.com/Angles/AppleScript-CLM-for-TW/master/AppleScript.plist)
+- [AvroAVDL.plist](https://github.com/rwilcox/apache_avro.bbpackage/tree/master/Contents/Language%20Modules)
+- [AwkLanguage.plist](http://blog.csdn.net/jznsmail)
+- [BBEditTextWranger-julia.plist](https://github.com/JuliaEditorSupport/julia-textwrangler-bbedit)
+- [cmake.plist](http://tadpol.org/projects/bbclm_for_cmake.html)
+- [coffescript.plist](https://gist.githubusercontent.com/sgss/1739174/raw/0dace6d2a5fc9507fbce15d9ae694bca1780e175/Info.plist)
+- [csharp.plist](https://raw.githubusercontent.com/zarinfam/textwrangler-csharp-swift-syntax-highlighting/master/csharp.plist)
+- [DCodelessLanguageModule.plist](https://github.com/jniehus/Dlang-for-BBEditTextWrangler)
+- [Diff.plist](https://github.com/ascarter/BBEdit-ApplicationSupport/blob/master/Language%20Modules/Diff.plist)
+- [dockerfile.plist](https://raw.githubusercontent.com/whoughton/BBEdit-LMs/master/dockerfile.plist)
+- [Elixir.bbpackage](https://github.com/chipotle/elixir_bbedit)
+- [GAS Assembly.plist](https://github.com/FrankBot1000/GAS-Assembly-Language-Module)
+- [GitBlame.plist](https://raw.githubusercontent.com/ascarter/BBEdit-ApplicationSupport/master/Language%20Modules/GitBlame.plist)
+- Go.plist: Go authors.
+- [groovy.plist](https://raw.githubusercontent.com/rhydlewis/text-editing/master/bbedit/groovy.plist)
+- [HAML.plist](https://raw.githubusercontent.com/mattmartini/BBEdit-Codeless-Language-Module-for-HAML-SASS/master/HAML.plist)
+- [haskell-syntax.plist](https://code.google.com/archive/p/bbedit-haskell/)
+- [java-properties.plist](https://raw.githubusercontent.com/signed8bit/bbedit-clm/master/java-properties/java-properties.plist)
+- [LESS.plist](https://raw.githubusercontent.com/mcguffin/bbedit-lesscss-language-module/master/LESS.plist)
+- [Lasso.plist](https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/default/bbedit/Lasso.plist)
+- [Make.plist](https://github.com/EricFromCanada/byte-bucket/blob/master/bbedit/Make.plist)
+- [Mathematica.plist](http://www.skidmore.edu/~flip/)
+- [Nim.plist](https://gist.github.com/ytomino/4c9d186d78a27ad202ac)
+- [OCaml.plist](https://gist.github.com/GPHemsley/1848824)
+- [Perl6.plist](https://github.com/briandfoy/Perl6_BBEdit_CLM)
+- [PostScript.plist](http://ancientgroove.co.uk/freebies/PostScript.plist)
+- [PowerShell.plist](https://raw.githubusercontent.com/doug-baer/BBEdit-PowerShell/master/PowerShell.plist)
+- [R.plist](https://stat.ethz.ch/pipermail/r-sig-mac/2017-January/012189.html)
+- [reStructuredText.plist](https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/default/bbedit/reStructuredText.plist)
+- [SASS.plist](https://raw.githubusercontent.com/mattmartini/BBEdit-Codeless-Language-Module-for-HAML-SASS/master/SASS.plist)
+- [Scala.plist](https://raw.githubusercontent.com/dclements/scala_bbedit/master/Language%20Modules/Scala.plist)
+- [Scala1.plist](https://raw.githubusercontent.com/zenmumbler/ScalaBBLM/master/Scala.plist)
+- [StandardML.plist](https://www.cl.cam.ac.uk/teaching/0910/FoundsCS/StandardML.plist)
+- [swift.plist](https://github.com/EricFromCanada/bbedit-swift-clm/blob/master/swift.plist)
+- [TypeScript.plist](https://gist.githubusercontent.com/isao/5f6fbe89a438086c36d8/raw/91c66fa3e470ccfb8baa9e71a2779003bbdd778a/TypeScript.plist)
+- [VisualBasic.plist](https://github.com/bluecat76/TW_Lang_VisualBasic)
 
 For those modules listed as "Unknown source", I've simply lost track of where they came from.
 
 Check each module for comments indicating the license. Unfortunately, many modules don't have a declared
 license.
+
+### Other language module lists
+
+The canonical list of third party modules is Bare Bones' [BBEdit Language Module
+Library](http://www.barebones.com/support/bbedit/plugin_library.html) page.
+
+The [bbeditextras.org](https://bbeditextras.org/) site also has [large list of BBEdit language
+modules](https://bbeditextras.org/wiki/index.php?title=Codeless_Language_Modules).
