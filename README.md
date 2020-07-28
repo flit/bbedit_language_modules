@@ -67,7 +67,7 @@ by Google or GitHub searches.
 - [Elixir.bbpackage](https://github.com/chipotle/elixir_bbedit)
 - [GAS Assembly.plist](https://github.com/FrankBot1000/GAS-Assembly-Language-Module)
 - [GitBlame.plist](https://raw.githubusercontent.com/ascarter/BBEdit-ApplicationSupport/master/Language%20Modules/GitBlame.plist)
-- Go.plist: Go authors.
+- [Go.bbpackage](https://github.com/ascarter/Go-bbpackage)
 - [groovy.plist](https://raw.githubusercontent.com/rhydlewis/text-editing/master/bbedit/groovy.plist)
 - [HAML.plist](https://raw.githubusercontent.com/mattmartini/BBEdit-Codeless-Language-Module-for-HAML-SASS/master/HAML.plist)
 - [haskell-syntax.plist](https://code.google.com/archive/p/bbedit-haskell/)
