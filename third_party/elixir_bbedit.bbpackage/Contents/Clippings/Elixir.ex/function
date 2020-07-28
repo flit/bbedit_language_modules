@@ -1,3 +1,0 @@
-#INLINE##INDENT#function do
-	#SELSTART#args#SELEND# -> #INSERTION#
-end

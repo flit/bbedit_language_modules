@@ -1,0 +1,3 @@
+#INDENT#def #SELSTART#method#SELEND# do
+	#INSERTION#
+end

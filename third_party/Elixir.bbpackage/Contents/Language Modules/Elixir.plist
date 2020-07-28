@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+
+	<key>BBLMLanguageDisplayName</key>
+	<string>Elixir</string>
+
+	<key>BBLMLanguageCode</key>
+	<string>elxr</string>
+
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.ex</string>
+		</dict>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.exs</string>
+		</dict>
+	</array>
+	
+	<key>BBLMPreferredFilenameExtension</key>
+	<string>ex</string>
+	
+	<key>BBLMIsCaseSensitive</key>
+	<true/>
+
+	<key>BBLMSupportsTextCompletion</key>
+	<true/>
+	
+	<key>BBLMScansFunctions</key>
+	<true/>
+
+	<key>BBLMColorsSyntax</key>
+	<true/>
+
+	<key>BBLMKeywordList</key>
+	<array>
+        <string>abs</string>
+        <string>alias!</string>
+        <string>and</string>
+        <string>apply</string>
+        <string>binary_part</string>
+        <string>binding</string>
+        <string>bit_size</string>
+        <string>byte_size</string>
+        <string>def</string>
+        <string>defdelegate</string>
+        <string>defexception</string>
+        <string>defguard</string>
+        <string>defguardp</string>
+        <string>defimpl</string>
+        <string>defmacro</string>
+        <string>defmacrop</string>
+        <string>defmodule</string>
+        <string>defoverridable</string>
+        <string>defp</string>
+        <string>defprotocol</string>
+        <string>defstruct</string>
+        <string>destructure</string>
+        <string>div</string>
+        <string>elem</string>
+        <string>exit</string>
+        <string>function_exported?</string>
+        <string>get_and_update_in</string>
+        <string>get_in</string>
+        <string>hd</string>
+        <string>if</string>
+        <string>in</string>
+        <string>inspect</string>
+        <string>is_atom</string>
+        <string>is_binary</string>
+        <string>is_bitstring</string>
+        <string>is_boolean</string>
+        <string>is_float</string>
+        <string>is_function</string>
+        <string>is_integer</string>
+        <string>is_list</string>
+        <string>is_map</string>
+        <string>is_nil</string>
+        <string>is_number</string>
+        <string>is_pid</string>
+        <string>is_port</string>
+        <string>is_reference</string>
+        <string>is_tuple</string>
+        <string>length</string>
+        <string>macro_exported?</string>
+        <string>make_ref</string>
+        <string>map_size</string>
+        <string>match?</string>
+        <string>max</string>
+        <string>min</string>
+        <string>node</string>
+        <string>not</string>
+        <string>or</string>
+        <string>pop_in</string>
+        <string>put_elem</string>
+        <string>put_in</string>
+        <string>raise</string>
+        <string>rem</string>
+        <string>reraise</string>
+        <string>round</string>
+        <string>self</string>
+        <string>send</string>
+        <string>spawn</string>
+        <string>spawn_link</string>
+        <string>spawn_monitor</string>
+        <string>struct</string>
+        <string>throw</string>
+        <string>tl</string>
+        <string>to_charlist</string>
+        <string>to_string</string>
+        <string>trunc</string>
+        <string>tuple_size</string>
+        <string>unless</string>
+        <string>update_in</string>
+        <string>use</string>
+        <string>var!</string>
+        <string>do</string>
+        <string>do:</string>
+        <string>end</string>
+        <string>alias</string>
+        <string>case</string>
+        <string>cond</string>
+        <string>fn</string>
+        <string>for</string>
+        <string>import</string>
+        <string>quote</string>
+        <string>receive</string>
+        <string>require</string>
+        <string>super</string>
+        <string>try</string>
+        <string>unquote</string>
+        <string>unquote_splicing</string>
+        <string>when</string>
+        <string>with</string>
+	</array>
+
+	<key>BBLMPredefinedNameList</key>
+	<array>
+        <string>__CALLER__</string>
+        <string>__DIR__</string>
+        <string>__ENV__</string>
+        <string>__MODULE__</string>
+        <string>__aliases__</string>
+        <string>__block__</string>
+        <string>Access</string>
+        <string>Agent</string>
+        <string>Application</string>
+        <string>Atom</string>
+        <string>Base</string>
+        <string>Bitwise</string>
+        <string>Calendar</string>
+        <string>ISO</string>
+        <string>Code</string>
+        <string>Collectable</string>
+        <string>Date</string>
+        <string>Range</string>
+        <string>DateTime</string>
+        <string>DynamicSupervisor</string>
+        <string>Enum</string>
+        <string>Enumerable</string>
+        <string>Exception</string>
+        <string>File</string>
+        <string>File.Stat</string>
+        <string>File.Stream</string>
+        <string>Float</string>
+        <string>GenServer</string>
+        <string>IO</string>
+        <string>IO.ANSI</string>
+        <string>IO.Stream</string>
+        <string>Inspect</string>
+        <string>Algebra</string>
+        <string>Opts</string>
+        <string>Integer</string>
+        <string>Kernel</string>
+        <string>ParallelCompiler</string>
+        <string>SpecialForms</string>
+        <string>Keyword</string>
+        <string>List</string>
+        <string>Chars</string>
+        <string>Macro</string>
+        <string>Env</string>
+        <string>Map</string>
+        <string>MapSet</string>
+        <string>Module</string>
+        <string>NaiveDateTime</string>
+        <string>Node</string>
+        <string>OptionParser</string>
+        <string>Path</string>
+        <string>Port</string>
+        <string>Process</string>
+        <string>Protocol</string>
+        <string>Record</string>
+        <string>Regex</string>
+        <string>Registry</string>
+        <string>Set</string>
+        <string>Stream</string>
+        <string>String</string>
+        <string>StringIO</string>
+        <string>Supervisor</string>
+        <string>Spec</string>
+        <string>System</string>
+        <string>Task</string>
+        <string>Time</string>
+        <string>Tuple</string>
+        <string>URI</string>
+        <string>Version</string>
+        <string>ArgumentError</string>
+        <string>ArithmeticError</string>
+        <string>BadArityError</string>
+        <string>BadBooleanError</string>
+        <string>BadFunctionError</string>
+        <string>BadMapError</string>
+        <string>BadStructError</string>
+        <string>CaseClauseError</string>
+        <string>Code.LoadError</string>
+        <string>CompileError</string>
+        <string>CondClauseError</string>
+        <string>Enum.EmptyError</string>
+        <string>Enum.OutOfBoundsError</string>
+        <string>ErlangError</string>
+        <string>File.CopyError</string>
+        <string>File.Error</string>
+        <string>File.LinkError</string>
+        <string>FunctionClauseError</string>
+        <string>IO.StreamError</string>
+        <string>InspectError</string>
+        <string>KeyError</string>
+        <string>MatchError</string>
+        <string>OptionParser.ParseError</string>
+        <string>Protocol.UndefinedError</string>
+        <string>Regex.CompileError</string>
+        <string>RuntimeError</string>
+        <string>SyntaxError</string>
+        <string>SystemLimitError</string>
+        <string>TokenMissingError</string>
+        <string>TryClauseError</string>
+        <string>UndefinedFunctionError</string>
+        <string>UnicodeConversionError</string>
+        <string>Version.InvalidRequirementError</string>
+        <string>Version.InvalidVersionError</string>
+        <string>WithClauseError</string>
+        <string>@behaviour</string>
+        <string>@doc</string>
+        <string>@moduledoc</string>
+	</array>
+	
+	<key>BBLMCommentLineDefault</key>
+	<string>#</string>
+
+	<key>Language Features</key>
+	<dict>
+	    <key>Identifier and Keyword Character Class</key>
+	    <string>A-Za-z0-9_:?@!%</string>
+	    
+	    <key>Comment Pattern</key>
+	    <string><![CDATA[
+	    (\#.*?$)
+	    ]]></string>
+	    
+	    <key>String Pattern</key>
+	    <string><![CDATA[
+	    (?x:
+	        (?s: ("""(\\"|[^"]|"{1,2}(?!"))*""")) | (?# double-quote heredoc)
+	        (?s: ('''(\\'|[^']|'{1,2}(?!'))*''')) | (?# single-quote heredoc)
+	        ("(\\"|[^"])*") | (?# double-quoted string)
+	        ('(\\'|[^'])*')   (?# single-quoted char list)
+	    )
+	    ]]>
+	    </string>
+	    
+	    <key>Function Pattern</key>
+	    <string><![CDATA[
+	    (?x:
+            (?P<indent>^\s*)
+            (?P<function>
+                def(macro)?p?\s+
+                (?P<function_name>[a-zA-Z0-9_:?@!%]+)
+                (
+                    (?s:.+?)\n(?P=indent)end\b |
+                    (.+\sdo:.+)
+                )
+            )
+        )
+        ]]>
+	    </string>
+	    
+	    <key>Skip Pattern</key>
+	    <string><![CDATA[
+	    (?x: (?P>comment) | (?P>string) )
+	    ]]>
+	    </string>
+	</dict>
+</dict>
+</plist>
