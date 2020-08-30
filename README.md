@@ -66,6 +66,7 @@ by Google or GitHub searches.
 - [Diff.plist](https://github.com/ascarter/BBEdit-ApplicationSupport/blob/master/Language%20Modules/Diff.plist)
 - [dockerfile.plist](https://raw.githubusercontent.com/whoughton/BBEdit-LMs/master/dockerfile.plist)
 - [Elixir.bbpackage](https://github.com/chipotle/elixir_bbedit)
+- [ErlangBBLM-1.4](https://github.com/pguyot/erlang-bblm)
 - [GAS Assembly.plist](https://github.com/FrankBot1000/GAS-Assembly-Language-Module)
 - [GitBlame.plist](https://raw.githubusercontent.com/ascarter/BBEdit-ApplicationSupport/master/Language%20Modules/GitBlame.plist)
 - [Go.bbpackage](https://github.com/ascarter/Go-bbpackage)
