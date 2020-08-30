@@ -13,8 +13,9 @@ My language modules
     - `.asl` extension
     - The Arm Architecture Specification Language is the pseudocode used in the Arm Architecture Reference Manuals.
     - See [Alastair Reid's blog](https://alastairreid.github.io) for more information about ASL.
-- [Arm assembler](ARMAssemblerCLM.plist)
-    - `.arm` extension
+- [GNU assembler](GnuAssemblerCLM.plist)
+    - `.s` extension
+    - Includes keywords for all common directive, plus Arm and AArch64.
 - [Bash shell script](BashShellScriptCLM.plist)
     - Superceded by BBEdit's built-in Unix Shell Script.
 - [CMake](cmake.plist)
