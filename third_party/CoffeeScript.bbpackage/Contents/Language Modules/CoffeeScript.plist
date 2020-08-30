@@ -7,14 +7,14 @@
     <key>com.barebones.DocumentType</key>
     <string>CodelessLanguageModule</string>
     <key>BBLMLanguageCode</key>
-    <string><![CDATA[CoSc]]></string>
+    <string>CoSc</string>
     <key>BBLMLanguageDisplayName</key>
-    <string><![CDATA[CoffeeScript]]></string>
+    <string>CoffeeScript</string>
     <key>BBLMSuffixMap</key>
     <array>
         <dict>
             <key>BBLMLanguageSuffix</key>
-            <string><![CDATA[.coffee]]></string>
+            <string>.coffee</string>
         </dict>
     </array>
     <key>BBLMPreferredFilenameExtension</key>
@@ -190,7 +190,7 @@
         )]]></string>
         <key>String Pattern</key>
         <string><![CDATA[(?x:
-          (?s: 
+          (?s:
             (?P<strstart>(?:"""|"|'''|'|(\/\/\/)|(\/)|\`))  (?# Open of string is 1 or 3 single or double quotes or one or)
             .*?                                             (?#  three forward slashes for regexes or a backtick for embedded JS)
             (?<!\\)(?P=strstart)                            (?# Close of string, not preceded by a backslash)
@@ -202,7 +202,7 @@
         <string><![CDATA[(?x:
           (?P<leadspace>^\s*)                       (?# Capture leading indentation)
           (?P<function>                             (?# Functions are defined by: <function_name><equals_sign><open_paren><string><close_paren><arrow>)
-            (?P<function_name>                      
+            (?P<function_name>
               [a-zA-Z0-9_-]+                        (?# function name)
               (?: [\:]{2} [a-zA-Z0-9_-]* )?         (?# prototype assignment looks like String::dasherize)
             )
