@@ -6,19 +6,20 @@
 
     v0.1 by Michael Conrad Tadpol Tilstra <tadpol@tadpol.org>
      http://tadpol.org/projects/bbclm_for_cmake.html
-  	v0.2 Fixes Recognizing CMakeLists.txt file names.
-	  	Fix from William Kyngesburye
-	  v0.3 Updates for 3.12 and new CLM features, added variables and properties
-	  v0.4 Chris Reed
-	    - String regex handles line continuations (backslash at end of line)
-	    - Added variable substitution pattern
-	    - Function detectiom
+    v0.2 Fixes Recognizing CMakeLists.txt file names.
+        Fix from William Kyngesburye
+    v0.3 Updates for 3.12 and new CLM features, added variables and properties
+    v0.4 Chris Reed
+        - String regex handles line continuations (backslash at end of line)
+        - Added variable substitution pattern
+        - Function detectiom
 
     Keyword list is made from cmake --help-command-list --help-module-list |grep -v 'cmake version'
 
     Copyright (c) 2020 Chris Reed.
     Released under a Creative Commons Attribution-ShareAlike License:
     <http://creativecommons.org/licenses/by-sa/4.0/>
+    (Original authors retain their copyrights)
 -->
     <dict>
         <key>BBEditDocumentType</key>
