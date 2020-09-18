@@ -9,35 +9,35 @@ extended, plus there is a folder containing a large number of third-party module
 My language modules
 -------------------
 
-- [Arm ASL](ArmASL.plist)
+- [Arm ASL](modules/ArmASL.plist)
     - `.asl` extension
     - The Arm Architecture Specification Language is the pseudocode used in the Arm Architecture Reference Manuals.
     - See [Alastair Reid's blog](https://alastairreid.github.io) for more information about ASL.
-- [GNU assembler](GnuAssemblerCLM.plist)
+- [GNU assembler](modules/GnuAssemblerCLM.plist)
     - `.s` extension
     - Includes keywords for all common directive, plus Arm and AArch64.
-- [Bash shell script](BashShellScriptCLM.plist)
+- [Bash shell script](modules/BashShellScriptCLM.plist)
     - Superceded by BBEdit's built-in Unix Shell Script.
-- [CMake](cmake.plist)
+- [CMake](modules/cmake.plist)
     - Modified version of the third-party module below.
-- [cpptemplate](cpptemplate.plist)
+- [cpptemplate](modules/cpptemplate.plist)
     - For templates used by the [cpptemplate](https://github.com/flit/cpptemplate) C++ templating library.
-- [elftosb `.bd` file](ElftosbBDFileCLM.plist)
+- [elftosb `.bd` file](modules/ElftosbBDFileCLM.plist)
     - For the config files used by the NXP elftosb tool that is part of their MCUBoot middleware.
-- [eRPC IDL](eRPC_IDL_CLM.plist)
+- [eRPC IDL](modules/eRPC_IDL_CLM.plist)
     - For the [eRPC](https://github.com/embeddedrpc/erpc) project's IDL files.
-- [GNU linker script](GnuLinkerScriptCLM.plist)
-- [Lark parser](LarkParserCLM.plist)
+- [GNU linker script](modules/GnuLinkerScriptCLM.plist)
+- [Lark parser](modules/LarkParserCLM.plist)
     - For the Lark parser package for Python.
-- [Make](Make.plist)
+- [Make](modules/Make.plist)
     - Modified version of the third-party Make module below.
-- [INI files](MyINIFileCLM.plist)
+- [INI files](modules/MyINIFileCLM.plist)
     - Another INI file module
-- [Patchfile](PathfileCLM.plist)
+- [Patchfile](modules/PathfileCLM.plist)
     - For `.patch` and `.diff` files as produced by git.
-- [Scala](Scala.plist)
+- [Scala](modules/Scala.plist)
     - Modified version of the two third-party Scala modules below.
-- [Windows or DOS batch file](WindowsBatchFile.plist)
+- [Windows or DOS batch file](modules/WindowsBatchFile.plist)
     - The ever-present `.bat` files on Windows and MS-DOS.
 
 The language modules are released under a Creative Commons Attribution-ShareAlike License:
