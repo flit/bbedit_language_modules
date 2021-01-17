@@ -59,7 +59,6 @@ by Google or GitHub searches.
 - [AvroAVDL.plist](https://github.com/rwilcox/apache_avro.bbpackage/tree/master/Contents/Language%20Modules)
 - [AwkLanguage.plist](http://blog.csdn.net/jznsmail)
 - [BBEditTextWranger-julia.plist](https://github.com/JuliaEditorSupport/julia-textwrangler-bbedit)
-- [cmake.plist](http://tadpol.org/projects/bbclm_for_cmake.html)
 - [coffescript.plist](https://gist.github.com/sgss/1739174/)
 - [csharp.plist](https://github.com/zarinfam/textwrangler-csharp-swift-syntax-highlighting/)
 - [DCodelessLanguageModule.plist](https://github.com/jniehus/Dlang-for-BBEditTextWrangler)
@@ -75,7 +74,6 @@ by Google or GitHub searches.
 - [haskell-syntax.plist](https://code.google.com/archive/p/bbedit-haskell/)
 - [java-properties.plist](https://raw.githubusercontent.com/signed8bit/bbedit-clm/master/java-properties/java-properties.plist)
 - [LESS.plist](https://raw.githubusercontent.com/mcguffin/bbedit-lesscss-language-module/master/LESS.plist)
-- [Lasso.plist](https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/default/bbedit/Lasso.plist)
 - [Make.plist](https://github.com/EricFromCanada/byte-bucket/blob/master/bbedit/Make.plist)
 - [Mathematica.plist](http://www.skidmore.edu/~flip/)
 - [Nim.plist](https://gist.github.com/ytomino/4c9d186d78a27ad202ac)
@@ -109,6 +107,8 @@ modules](https://bbeditextras.org/wiki/index.php?title=Codeless_Language_Modules
 The modules under `third_party/outdated` have either been superceded by modules built-in to BBEdit,
 or no longer work with recent BBEdit versions and have no updated release.
 
+- [cmake.plist](http://tadpol.org/projects/bbclm_for_cmake.html)
+- [Lasso.plist](https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/default/bbedit/Lasso.plist)
 - [swift.plist](https://github.com/EricFromCanada/bbedit-swift-clm/blob/master/swift.plist)
 
 
