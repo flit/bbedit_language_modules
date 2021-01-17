@@ -1,3 +1,6 @@
 [submodule "LanguageModuleSDK"]
 	path = LanguageModuleSDK
 	url = git@github.com:siegel/LanguageModuleSDK.git
+[submodule "third_party/Rust-BBEdit.bbpackage"]
+	path = third_party/Rust-BBEdit.bbpackage
+	url = git@github.com:ogham/Rust-BBEdit.git
