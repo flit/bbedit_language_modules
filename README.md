@@ -4,6 +4,9 @@ BBEdit Language Module Collection
 This repository contains various language modules and packages for BBEdit. Some are ones I created or
 extended, plus there is a folder containing a large number of third-party modules.
 
+**Note:** This repository uses git submodules. Either pass `--recurse-submodules` to the clone command or run
+`git submodule update --init` after cloning.
+
 
 
 My language modules
@@ -83,6 +86,8 @@ by Google or GitHub searches.
 - [PowerShell.plist](https://github.com/doug-baer/BBEdit-PowerShell/)
 - [R.plist](https://stat.ethz.ch/pipermail/r-sig-mac/2017-January/012189.html)
 - [reStructuredText.plist](https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/default/bbedit/reStructuredText.plist)
+- [Rust-BBEdit.bbpackage](https://www.github.com/ogham/Rust-BBEdit)
+    - This is a submodule
 - [SASS.plist](https://github.com/mattmartini/BBEdit-Codeless-Language-Module-for-HAML-SASS/)
 - [Scala.plist](https://github.com/dclements/scala_bbedit)
 - [Scala1.plist](https://raw.githubusercontent.com/zenmumbler/ScalaBBLM/master/Scala.plist)
