@@ -25,6 +25,8 @@ My language modules
     - Modified version of the third-party module below.
 - [cpptemplate](modules/cpptemplate.plist)
     - For templates used by the [cpptemplate](https://github.com/flit/cpptemplate) C++ templating library.
+- [Dockerfile](modules/dockerfile.plist)
+    - Updated version of the third-party module below.
 - [elftosb `.bd` file](modules/ElftosbBDFileCLM.plist)
     - For the config files used by the NXP elftosb tool that is part of their MCUBoot middleware.
 - [eRPC IDL](modules/eRPC_IDL_CLM.plist)
