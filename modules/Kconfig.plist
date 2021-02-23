@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+  Copyright (c) 2021 Chris Reed.
+
+  Released under a Creative Commons Attribution-ShareAlike License:
+  <http://creativecommons.org/licenses/by-sa/4.0/>
+-->
+    <dict>
+        <key>BBEditDocumentType</key>
+        <string>CodelessLanguageModule</string>
+        <key>BBLMColorsSyntax</key>
+        <true/>
+        <key>BBLMIsCaseSensitive</key>
+        <true/>
+<!--
+			<string>com.barebones.bblm.preprocessor</string>
+			<string>com.barebones.bblm.variable</string>
+			<string>com.barebones.bblm.keyword</string>
+			<string>com.barebones.bblm.predefined-symbol</string>
+			<string>com.barebones.bblm.file-include</string>
+ -->
+        <key>BBLMKeywordPatterns</key>
+        <array>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.variable</string>
+                <key>Pattern</key>
+                <string>[A-Z][A-Z0-9_]*</string> <!-- all caps words are "variables" -->
+            </dict>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.keyword</string>
+                <key>Pattern</key>
+                <string>{$.*}</string>
+            </dict>
+        </array>
+        <key>BBLMKeywords</key>
+        <array>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.predefined-symbol</string>
+                <key>Keywords</key>
+                <array>
+                    <string>y</string>
+                    <string>n</string>
+                    <string>m</string>
+                </array>
+            </dict>
+            <dict>
+                <key>RunKind</key>
+                <string>com.barebones.bblm.keyword</string>
+                <key>Keywords</key>
+                <array>
+                    <string>config</string>
+                    <string>bool</string>
+                    <string>tristate</string>
+                    <string>string</string>
+                    <string>hex</string>
+                    <string>int</string>
+                    <string>prompt</string>
+                    <string>if</string>
+                    <string>endif</string>
+                    <string>default</string>
+                    <string>def_bool</string>
+                    <string>def_tristate</string>
+                    <string>depends</string>
+                    <string>on</string>
+                    <string>select</string>
+                    <string>imply</string>
+                    <string>visible</string>
+                    <string>range</string>
+                    <string>help</string>
+                    <string>option</string>
+                    <string>defconfig_list</string>
+                    <string>modules</string>
+                    <string>allnoconfig_y</string>
+                    <string>menu</string>
+                    <string>endmenu</string>
+                    <string>comment</string>
+                    <string>menuconfig</string>
+                    <string>choice</string>
+                    <string>endchoice</string>
+                    <string>source</string>
+                    <string>mainmenu</string>
+                </array>
+            </dict>
+        </array>
+        <key>BBLMLanguageCode</key>
+        <string>Kcfg</string>
+        <key>BBLMLanguageDisplayName</key>
+        <string>Kconfig</string>
+        <key>BBLMScansFunctions</key>
+        <true/>
+        <key>BBLMSuffixMap</key>
+        <array>
+<!--
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.cpptempl</string>
+            </dict>
+ -->
+        </array>
+        <key>BBLMCanSpellCheckCodeRuns</key>
+        <false/>
+        <key>BBLMCommentLineDefault</key>
+        <string>#</string>
+        <key>Language Features</key>
+        <dict>
+            <key>Identifier and Keyword Character Class</key>
+            <string>a-zA-Z0-9_.</string>
+            <key>Comment Pattern</key>
+            <string>(#.*$)</string>
+            <key>String Pattern</key>
+            <string><![CDATA[(?x:
+              "(?>\\.|[^"])*?"	(?# double quote)	|
+              '(?>\\.|[^'])*?'	(?# single quote)
+            )]]></string>
+            <key>Function Pattern</key>
+            <string><![CDATA[(?x:
+              ((menu|config|menuconfig\s+)
+              (?P<function_name>([a-zA-Z0-9_]+|\"[^"]+\"")))
+            )]]></string>
+            <key>Skip Pattern</key>
+            <string><![CDATA[(?x:
+                (?P>comment) |
+                (?P>string)
+            )]]></string>
+        </dict>
+        <key>com.barebones.DocumentType</key>
+        <string>CodelessLanguageModule</string>
+    </dict>
+</plist>

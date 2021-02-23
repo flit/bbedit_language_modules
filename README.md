@@ -32,6 +32,8 @@ My language modules
 - [eRPC IDL](modules/eRPC_IDL_CLM.plist)
     - For the [eRPC](https://github.com/embeddedrpc/erpc) project's IDL files.
 - [GNU linker script](modules/GnuLinkerScriptCLM.plist)
+- [Kconfig](modules/Kconfig.plist)
+    - For the Linux and Zephyr Kconfig syntax for config files.
 - [Lark parser](modules/LarkParserCLM.plist)
     - For the Lark parser package for Python.
 - [Make](modules/Make.plist)
