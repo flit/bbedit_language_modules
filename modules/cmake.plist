@@ -12,11 +12,13 @@
     v0.4 Chris Reed
         - String regex handles line continuations (backslash at end of line)
         - Added variable substitution pattern
-        - Function detectiom
+        - Function detection
+    v0.5 Chris Reed
+        - Fix function regex
 
     Keyword list is made from cmake --help-command-list --help-module-list |grep -v 'cmake version'
 
-    Copyright (c) 2020 Chris Reed.
+    Copyright (c) 2020-2021 Chris Reed.
     Released under a Creative Commons Attribution-ShareAlike License:
     <http://creativecommons.org/licenses/by-sa/4.0/>
     (Original authors retain their copyrights)
@@ -1111,9 +1113,8 @@
 
           <key>Function Pattern</key>
           <string><![CDATA[(?x:
-            function\(\s*
+            (function|macro)\s*\(\s*
               (?P<function_name>\s+[a-zA-Z0-9_$]+)
-            \s*\)
           )]]></string>
         </dict>
     </dict>
