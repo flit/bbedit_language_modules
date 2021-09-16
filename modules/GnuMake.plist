@@ -2,10 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <!--
-  Copyright (c) 2020 Chris Reed.
+  Copyright (c) 2020-2021 Chris Reed.
 
   Released under a Creative Commons Attribution-ShareAlike License:
   <http://creativecommons.org/licenses/by-sa/4.0/>
+
+  Version 1.0.1:
+  - removed number pattern matching .PHONY that caused issues
+  - renamed to "GNU Make"
+  - added "GNUmakefile" to list of filenames to match
+  Version 1.0:
+  - first release
 -->
 <dict>
 	<key>BBEditDocumentType</key>
@@ -24,7 +31,10 @@
 	<key>BBLMFileNamesToMatch</key>
 	<array>
 		<string>Makefile</string>
+		<string>makefile</string>
+		<string>GNUmakefile</string>
 		<string>Makefile.*</string>
+		<string>makefile.*</string>
 	</array>
 	<key>BBLMIsCaseSensitive</key>
 	<true/>
@@ -159,7 +169,7 @@
 		</dict>
 	</array>
 	<key>BBLMLanguageCode</key>
-	<string>Make</string>
+	<string>GNU Make</string>
 	<key>BBLMLanguageDisplayName</key>
 	<string>Make</string>
 	<key>BBLMReferenceSearchURLTemplate</key>
@@ -174,8 +184,6 @@
 		<string>#.*$</string>
 		<key>Function Pattern</key>
 		<string>^(?P&lt;function&gt;(?P&lt;function_name&gt;[\S]+?) *:.*$(\r[ \t]+.*)*)</string>
-		<key>Number Pattern</key><!-- appropriating for .PHONY -->
-		<string>^\.PHONY:[^\\\r]*(\\\r[^\\\r]*)*</string>
 		<key>String Pattern</key>
 		<string>(?x:
 			(?&gt;	"	(?s: \\. | [^"] )*?		(?: " | $)	)	|
