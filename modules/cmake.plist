@@ -15,6 +15,7 @@
         - Function detection
     v0.5 Chris Reed
         - Fix function regex
+        - Extend comment regex to cover module documentation comments
 
     Keyword list is made from cmake --help-command-list --help-module-list |grep -v 'cmake version'
 
@@ -38,7 +39,7 @@
                 <key>RunKind</key>
                 <string>com.barebones.bblm.variable</string>
                 <key>Pattern</key>
-                <string>($|CACHE|ENV){[a-zA-Z_][a-zA-Z0-9_]*}</string>
+                <string>(\$|CACHE|ENV)\{[a-zA-Z_][a-zA-Z0-9_]*\}</string>
             </dict>
         </array>
         <key>BBLMKeywords</key>
@@ -1100,7 +1101,9 @@
         <key>Language Features</key>
         <dict>
           <key>Comment Pattern</key>
-          <string><![CDATA[(?>#.*$)]]></string>
+          <string><![CDATA[(?x:
+              (?>\#\[=+\[)(?s:.*?)\#\]=+\] | (?>\#.*$)
+          )]]></string>
 
           <key>Identifier and Keyword Character Class</key>
           <string>a-z_A-Z0-9</string>
@@ -1113,8 +1116,12 @@
 
           <key>Function Pattern</key>
           <string><![CDATA[(?x:
-            (function|macro)\s*\(\s*
-              (?P<function_name>\s+[a-zA-Z0-9_$]+)
+              (?P<function>
+                  (?<!end)
+                  (?>(function|macro)\s*)(?>\(\s*)
+                  (?P<function_name>[a-zA-Z0-9_$]+)
+                  (?s:[^\)]*)\)
+              )
           )]]></string>
         </dict>
     </dict>
