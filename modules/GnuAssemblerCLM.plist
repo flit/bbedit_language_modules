@@ -337,6 +337,10 @@
                 <key>BBLMLanguageSuffix</key>
                 <string>.s</string>
             </dict>
+            <dict>
+                <key>BBLMLanguageSuffix</key>
+                <string>.S</string>
+            </dict>
         </array>
         <key>BBLMCanSpellCheckCodeRuns</key>
         <false/>
