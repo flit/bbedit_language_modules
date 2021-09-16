@@ -17,10 +17,8 @@ My language modules
     - The Arm Architecture Specification Language is the pseudocode used in the Arm Architecture Reference Manuals.
     - See [Alastair Reid's blog](https://alastairreid.github.io) for more information about ASL.
 - [GNU assembler](modules/GnuAssemblerCLM.plist)
-    - `.s` extension
+    - `.s` and `.S` extensions
     - Includes keywords for all common directive, plus Arm and AArch64.
-- [Bash shell script](modules/BashShellScriptCLM.plist)
-    - Superceded by BBEdit's built-in Unix Shell Script.
 - [CMake](modules/cmake.plist)
     - Modified version of the third-party module below.
 - [cpptemplate](modules/cpptemplate.plist)
@@ -32,6 +30,7 @@ My language modules
 - [eRPC IDL](modules/eRPC_IDL_CLM.plist)
     - For the [eRPC](https://github.com/embeddedrpc/erpc) project's IDL files.
 - [GNU linker script](modules/GnuLinkerScriptCLM.plist)
+    - `.ld` linker scripts
 - [Kconfig](modules/Kconfig.plist)
     - For the Linux and Zephyr Kconfig syntax for config files.
 - [Lark parser](modules/LarkParserCLM.plist)
@@ -70,12 +69,11 @@ by Google or GitHub searches.
 - [csharp.plist](https://github.com/zarinfam/textwrangler-csharp-swift-syntax-highlighting/)
 - [DCodelessLanguageModule.plist](https://github.com/jniehus/Dlang-for-BBEditTextWrangler)
 - [Diff.plist](https://github.com/ascarter/BBEdit-ApplicationSupport/blob/master/Language%20Modules/Diff.plist)
-- [dockerfile.plist](https://raw.githubusercontent.com/whoughton/BBEdit-LMs/master/dockerfile.plist)
 - [Elixir.bbpackage](https://github.com/chipotle/elixir_bbedit)
 - [ErlangBBLM-1.4](https://github.com/pguyot/erlang-bblm)
-- [GAS Assembly.plist](https://github.com/FrankBot1000/GAS-Assembly-Language-Module)
 - [GitBlame.plist](https://raw.githubusercontent.com/ascarter/BBEdit-ApplicationSupport/master/Language%20Modules/GitBlame.plist)
 - [Go.bbpackage](https://github.com/ascarter/Go-bbpackage)
+    - No longer required with BBEdit 14 since it has built-in Go support.
 - [groovy.plist](https://raw.githubusercontent.com/rhydlewis/text-editing/master/bbedit/groovy.plist)
 - [HAML.plist](https://raw.githubusercontent.com/mattmartini/BBEdit-Codeless-Language-Module-for-HAML-SASS/master/HAML.plist)
 - [haskell-syntax.plist](https://code.google.com/archive/p/bbedit-haskell/)
@@ -89,15 +87,17 @@ by Google or GitHub searches.
 - [PostScript.plist](http://ancientgroove.co.uk/freebies/PostScript.plist)
 - [PowerShell.plist](https://github.com/doug-baer/BBEdit-PowerShell/)
 - [R.plist](https://stat.ethz.ch/pipermail/r-sig-mac/2017-January/012189.html)
+    - No longer required with BBEdit 14 since it has built-in R support.
 - [reStructuredText.plist](https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/default/bbedit/reStructuredText.plist)
 - [Rust-BBEdit.bbpackage](https://www.github.com/ogham/Rust-BBEdit)
     - This is a submodule
+    - No longer required with BBEdit 14 since it has built-in Rust support.
 - [SASS.plist](https://github.com/mattmartini/BBEdit-Codeless-Language-Module-for-HAML-SASS/)
-- [Scala.plist](https://github.com/dclements/scala_bbedit)
-- [Scala1.plist](https://raw.githubusercontent.com/zenmumbler/ScalaBBLM/master/Scala.plist)
 - [StandardML.plist](https://www.cl.cam.ac.uk/teaching/0910/FoundsCS/StandardML.plist)
 - [TypeScript.plist](https://gist.githubusercontent.com/isao/5f6fbe89a438086c36d8/raw/91c66fa3e470ccfb8baa9e71a2779003bbdd778a/TypeScript.plist)
+    - No longer required with BBEdit 14 since it has built-in TypeScript support.
 - [VisualBasic.plist](https://github.com/bluecat76/TW_Lang_VisualBasic)
+    - No longer required with BBEdit 14 since it has built-in VBScript support.
 
 Check each module for comments indicating the license. Unfortunately, many modules don't have a declared
 license.
@@ -111,13 +111,12 @@ The [bbeditextras.org](https://bbeditextras.org/) site also has [large list of B
 modules](https://bbeditextras.org/wiki/index.php?title=Codeless_Language_Modules).
 
 
-### Outdated modules
+Outdated modules
+----------------
 
-The modules under `third_party/outdated` have either been superceded by modules built-in to BBEdit,
-or no longer work with recent BBEdit versions and have no updated release.
+The modules under `modules/outdated` and `third_party/outdated` have either been superceded by modules
+built-in to BBEdit, no longer work with recent BBEdit versions and have no updated release, or, for
+third-party modules, were improved and moved under `modules`
 
-- [cmake.plist](http://tadpol.org/projects/bbclm_for_cmake.html)
-- [Lasso.plist](https://bitbucket.org/EricFromCanada/ericfromcanada.bitbucket.org/raw/default/bbedit/Lasso.plist)
-- [swift.plist](https://github.com/EricFromCanada/bbedit-swift-clm/blob/master/swift.plist)
 
 
